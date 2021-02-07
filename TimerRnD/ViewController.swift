@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     @IBAction func btnStart(_ sender: UIButton) {
         let checkCounter = checkNil(check: txtCounter.text!)
         if checkCounter == 1{
-        
+        //카운트가 텍스트에 적은 숫자가 나올수 있도록 장치
         counter = Int(txtCounter.text!)!+1
         mTimer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: timeSelector, userInfo: nil, repeats: true)
             txtCounter.isHidden = true
